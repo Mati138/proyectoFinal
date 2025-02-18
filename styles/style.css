@@ -1,0 +1,150 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Reset */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    line-height: 1.6;
+    color: #2c2c2c;
+    background-color: #fdfaf6;
+}
+
+
+
+
+
+
+
+
+/* Reglas generales */
+h1{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+h2{
+    font-family: "Poppins", serif;
+    font-size: 1.125rem;
+}
+h3{   
+    font-family: "Poppins", serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+p{
+   
+    font-size: 1rem;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #2c2c2c;
+    
+}
+.negrita600{
+    font-weight: 600;
+}
+.negrita700{
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+/* Header */
+
+.reserva a{
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+/* Footer */
+.linea{
+    border-top: 1px #000 solid;
+    width: 80%;
+}
+.copyright{
+    font-size: .8rem;
+}
+
+
+
+
+
+
+
+/* Página Home */
+.hero{
+    background-color: grey;
+    height: 80vh;
+}
+
+.caracteristicasPrincipales .card{
+    background-color: grey;
+}
+
+
+
+
+
+
+
+
+/* Página Departamento */
+
+
+
+
+
+
+
+
+
+/* Página Explora Salta */
+
+.gastronomia .card, .historia .card{
+    background-color: bisque;
+    margin: 24px 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* Página Preguntas frecuentes */
+
+
+
+
+
+
+
+
+
+/* Página Contacto y reservas */
+.contactoBtn{
+    background-color: grey;
+
+    color: white;
+}
+.contactoBtn img{
+    width: 16px;
+}
