@@ -11,136 +11,177 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="../pages/departamento.html">Departamento</a>
-                </li>
-                <li>
-                    <a href="../pages/exploraSalta.html">Explora Salta</a>
-                </li>
-                <li>
-                    <a href="../pages/preguntasFrecuentes.html">Preguntas frecuentes</a>
-                </li>
-                <li>
-                    <a href="../pages/ContactoReservas.html">Contacto y reservas</a>
-                </li>
-            </ul>
-            <img src="../assets/ico/menu.svg" alt="menu">
+        <nav class="navbar bg-transparent  mt-4">
+            <div class="container-fluid d-flex justify-content-end">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../pages/departamento.html">Departamento</a>
+                    </li>
+                    <li>
+                        <a href="../pages/exploraSalta.html">Explora Salta</a>
+                    </li>
+                    <li>
+                        <a href="../pages/preguntasFrecuentes.html">Preguntas frecuentes</a>
+                    </li>
+                    <li>
+                        <a href="../pages/ContactoReservas.html">Contacto y reservas</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
         </nav>
     </header>
     <main>
         <section class="infoDepartamento">
-            <h1>Lorem ipsum dolor sit amet consectetur. Vulputate nisl ac est vulputate eu neque dolor posuere.</h1>
-            <div>
-                <!-- Acá va a ir el carrousel, cambia el diseño si es mobile o desktop -->
-                <img src="https://placehold.co/600x400" alt="">
+            <h1 class="infoDepartamento__titulo">Un espacio diseñado para tu comodidad, donde cada detalle cuenta. Descubrí lo que este lugar tiene preparado para vos.</h1>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="../assets/img/img-dpto6.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../assets/img/img-dpto8.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../assets/img/img-dto12.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur. Condimentum magna quis aliquam dolor auctor volutpat. Ullamcorper platea est dolor a mattis nec. Integer montes euismod nunc faucibus nibh magna ante eget ac. Augue aliquet aliquam lacus amet eget arcu condimentum. Nunc congue pellentesque consequat faucibus lectus aliquam lacus volutpat. Vulputate congue semper mauris vitae adipiscing.</p>
+            <p>Bienvenido a nuestro rincón en Salta, un espacio lleno de luz, detalles y confort. Aquí todo está pensado para que tu estadía sea especial, desde la cocina equipada donde podés empezar el día con tu desayuno favorito, hasta la sala de estar donde podés relajarte después de explorar la ciudad. Este lugar es más que un alojamiento: es tu hogar mientras descubrís lo mejor de Salta.</p>
         </section>
         <section class="caracteristicasDepartamento">
-            <h2>Lorem ipsum dolor sit amet consectetur. Dignissim</h2>
-            <h3>Lorem ipsum dolor.</h3>
-            <ul>
-                <li>
-                    <img src="" alt="">
-                    <p>Lorem ipsum</p>
+            <h2 class="caracteristicasDepartamento__titulo">Todo lo que necesitas para disfrutar de tu estadía</h2>
+            <h3 class="caracteristicasDepartamento__subtitulo">Dormitorio y lavadero</h3>
+            <ul class="caracteristicasDepartamento__listado">
+                <li class="caracteristicasDepartamento__listado__elemento">
+                    <img src="https://placehold.co/24x24" alt="">
+                    <p>Lavarropas</p>
                 </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Lorem ipsum</p>
+                <li class="caracteristicasDepartamento__listado__elemento">
+                    <img src="https://placehold.co/24x24" alt="">
+                    <p>Perchas</p>
                 </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Lorem ipsum</p>
+                <li class="caracteristicasDepartamento__listado__elemento">
+                    <img src="https://placehold.co/24x24" alt="">
+                    <p>Plancha</p>
                 </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Lorem ipsum</p>
+                <li class="caracteristicasDepartamento__listado__elemento">
+                    <img src="https://placehold.co/24x24" alt="">
+                    <p>Ropa de cama</p>
                 </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Lorem ipsum</p>
-                </li>
-            </ul>
-            <h3>Lorem ipsum dolor.</h3>
-            <ul>
-                <li>
-                    <img src="" alt="">
-                    <p>Lorem ipsum</p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Lorem ipsum</p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Lorem ipsum</p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Lorem ipsum</p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Lorem ipsum</p>
+                <li class="caracteristicasDepartamento__listado__elemento">
+                    <img src="https://placehold.co/24x24" alt="">
+                    <p>Persianas o cortinas blackout</p>
                 </li>
             </ul>
-            <h3>Lorem ipsum dolor.</h3>
-            <ul>
-                <li>
-                    <img src="" alt="">
-                    <p>Lorem ipsum</p>
+            <h3 class="caracteristicasDepartamento__subtitulo">Cocina y comedor</h3>
+            <ul class="caracteristicasDepartamento__listado">
+                <li class="caracteristicasDepartamento__listado__elemento">
+                    <img src="https://placehold.co/24x24" alt="">
+                    <p>Cocina</p>
                 </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Lorem ipsum</p>
+                <li class="caracteristicasDepartamento__listado__elemento">
+                    <img src="https://placehold.co/24x24" alt="">
+                    <p>Heladera</p>
+                </li>
+                <li class="caracteristicasDepartamento__listado__elemento">
+                    <img src="https://placehold.co/24x24" alt="">
+                    <p>Congelador</p>
+                </li>
+                <li class="caracteristicasDepartamento__listado__elemento">
+                    <img src="https://placehold.co/24x24" alt="">
+                    <p>Vajilla</p>
+                </li>
+                <li class="caracteristicasDepartamento__listado__elemento">
+                    <img src="https://placehold.co/24x24" alt="">
+                    <p>Microondas</p>
+                </li>
+                <li class="caracteristicasDepartamento__listado__elemento">
+                    <img src="https://placehold.co/24x24" alt="">
+                    <p>Pava eléctrica</p>
+                </li>
+                <li class="caracteristicasDepartamento__listado__elemento">
+                    <img src="https://placehold.co/24x24" alt="">
+                    <p>Tostadora</p>
                 </li>
             </ul>
-            <h3>Lorem ipsum dolor.</h3>
-            <ul>
-                <li>
-                    <img src="" alt="">
-                    <p>Lorem ipsum</p>
+            <h3 class="caracteristicasDepartamento__subtitulo">Internet y entretenimiento</h3>
+            <ul class="caracteristicasDepartamento__listado">
+                <li class="caracteristicasDepartamento__listado__elemento">
+                    <img src="https://placehold.co/24x24" alt="">
+                    <p>Wifi</p>
                 </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Lorem ipsum</p>
+                <li class="caracteristicasDepartamento__listado__elemento">
+                    <img src="https://placehold.co/24x24" alt="">
+                    <p>Televisor</p>
+                </li>
+            </ul>
+            <h3 class="caracteristicasDepartamento__subtitulo">Calefacción y refrigeración</h3>
+            <ul class="caracteristicasDepartamento__listado">
+                <li class="caracteristicasDepartamento__listado__elemento">
+                    <img src="https://placehold.co/24x24" alt="">
+                    <p>Aire acondicionado</p>
+                </li>
+                <li class="caracteristicasDepartamento__listado__elemento">
+                    <img src="https://placehold.co/24x24" alt="">
+                    <p>Calefacción radiante</p>
                 </li>
             </ul>
         </section>
         <section class="ubicacionDepartamento">
             <p>
-                <span class="negrita600">Lorem ipsum dolor sit amet consectetur. Nulla turpis auctor enim hendrerit quis.</span>
-                Mauris enim ornare lacus aenean egestas pellentesque. Nulla sed venenatis in senectus adipiscing. Mi egestas eu non vitae et ultricies dui sagittis cursus. Mauris faucibus dictumst in purus a morbi.
+                <span class="negrita600">Desde nuestro departamento, todo lo que hace especial a esta ciudad está a tu alcance.</span>
+                Imagina despertar y saber que las calles coloniales, los sabores únicos y las atracciones emblemáticas están a solo pasos de distancia.
             </p>
             <p>
-                Lorem ipsum dolor sit amet consectetur. Curabitur nunc neque ultricies egestas nibh sollicitudin. Tellus ultricies 
+                Para que puedas planificar mejor tu experiencia, te dejamos el mapa con nuestra ubicación
             </p>
             <div>
                 <!-- Acá va ir un mapa de google maps con la ubicación del dto  -->
             </div>
         </section>
         <section class="reserva">
-            <p class="negrita700">Lorem ipsum dolor sit amet consect.</p>
+            <p class="negrita700">¿Listo para vivir esta experiencia?</p>
             <a href="../pages/ContactoReservas.html">
                 Reserva tu estadía ahora
                 <img src="../assets/ico/arrowRight.svg" alt="">
             </a>
         </section>
-
-        
+    <div class="linea"></div>
     </main>
     <footer>
-        <div class="linea"></div>
-        <p>La ciudad te espera, y tu espacio ya está listo. <span class="negrita">¿Preparado para empezar la aventura?</span> </p>
-        <p>Encontranos también en:</p>
-        <img src="../assets/ico/AirbnbLogo.svg" alt="Airbnb Logo">
-        <img src="../assets/ico/bookingLogo.svg" alt="Booking Logo">
-        <img src="../assets/ico/alquileresArgLogo.svg" alt="alquileres Argentina Logo">
+        <div class="footer__contenido">
+            <p>La ciudad te espera, y tu espacio ya está listo. <span class="negrita600">¿Preparado para empezar la aventura?</span> </p>
+            
+            <div class="footer__redes">
+                <p>Encontranos también en:</p>
+                <div class="footer__redes__links">
+                    <img src="../assets/ico/AirbnbLogo.svg" alt="Airbnb Logo">
+                    <img src="../assets/ico/bookingLogo.svg" alt="Booking Logo">
+                    <img src="../assets/ico/alquileresArgLogo.svg" alt="alquileres Argentina Logo">
+                </div>
+            </div>
+        </div>
         <p class="copyright">©2025 lorem. Todos los derechos reservados.</p>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

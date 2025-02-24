@@ -3,142 +3,182 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- CSS -->
-        <link rel="stylesheet" href="./styles/style.css">
+       
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+        <!-- CSS -->
+        <link rel="stylesheet" href="./styles/style.css">
     
 
         <title>Proyecto final</title>
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="./pages/departamento.html">Departamento</a>
-                    </li>
-                    <li>
-                        <a href="./pages/exploraSalta.html">Explora Salta</a>
-                    </li>
-                    <li>
-                        <a href="./pages/preguntasFrecuentes.html">Preguntas frecuentes</a>
-                    </li>
-                    <li>
-                        <a href="./pages/ContactoReservas.html">Contacto y reservas</a>
-                    </li>
-                </ul>
-                <img src="./assets/ico/menu.svg" alt="menu">
+            <nav class="navbar bg-transparent  mt-4">
+                <div class="container-fluid d-flex justify-content-end">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/departamento.html">Departamento</a>
+                        </li>
+                        <li>
+                            <a href="./pages/exploraSalta.html">Explora Salta</a>
+                        </li>
+                        <li>
+                            <a href="./pages/preguntasFrecuentes.html">Preguntas frecuentes</a>
+                        </li>
+                        <li>
+                            <a href="./pages/ContactoReservas.html">Contacto y reservas</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
             </nav>
         </header>
-        <main>
+        <main class="main--home">
             <section class="hero">
-                <h1>Lorem ipsum dolor sit amet consectetur. Aliquet a turpis magna urna morbi lacus. Sit amet feugiat nibh vitae neque dictum imperdiet donec.</h1>
-                <a href="">
-                    Desliza
-                </a>
-                <img src="./assets/ico/arrow_down.svg" alt="">
-                <img src="" alt="">  <!-- Imagen o video con las fotos del dto, en la versión mobile tiene display none-->
+                <h1 class="hero__titulo">Lorem ipsum dolor sit amet consectetur. Aliquet a turpis magna urna morbi lacus. Sit amet feugiat nibh vitae neque dictum imperdiet donec.</h1>
+                <div class="hero__btn">
+                    <a href="">
+                        Desliza
+                    </a>
+                    <img src="./assets/ico/arrow_down.svg" alt="">
+                </div>
+
+                <img class="hero__img" src="" alt="">  <!-- Imagen o video con las fotos del dto, en la versión mobile tiene display none-->
             </section>
             <section class="caracteristicasPrincipales">
-                <h2>Lorem ipsum dolor sit amet consect.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur. Diam scelerisque malesuada eu egestas faucibus pretium porttitor.</p>
-                <article class="card">
-                    <div>
-                        <h3>Lorem ipsum dolor sit amet consect.</h3>
-                        <img src="https://placehold.co/100x100" alt="">
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consecte. Diam scelerisque malesuada eu egest faucibus pretium porttitor.</p>
-                        <a href="" target="autoBlank">
-                            Lorem ipsum
-                            <img src="./assets/ico/arrowRight.svg" alt=" flecha para la derecha">
-                        </a>
-                    </div>
-                </article>
-                <article class="card">
-                    <div>
-                        <h3>Lorem ipsum dolor sit amet consect.</h3>
-                        <img src="https://placehold.co/100x100" alt="">
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consecte. Diam scelerisque malesuada eu egest faucibus pretium porttitor.</p>
-                        <a href="" target="autoBlank">
-                            Lorem ipsum
-                            <img src="./assets/ico/arrowRight.svg" alt=" flecha para la derecha">
-                        </a>
-                    </div>
-                </article>
-                <article class="card">
-                    <div>
-                        <h3>Lorem ipsum dolor sit amet consect.</h3>
-                        <img src="https://placehold.co/100x100" alt="">
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consecte. Diam scelerisque malesuada eu egest faucibus pretium porttitor.</p>
-                        <a href="" target="autoBlank">
-                            Lorem ipsum
-                            <img src="./assets/ico/arrowRight.svg" alt=" flecha para la derecha">
-                        </a>
-                    </div>
-                </article>
+                <div class="caracteristicasPrincipales__presentacion">
+                    <h2 class="caracteristicasPrincipales__presentacion__titulo">Un Departamento Pensado para Vos</h2>
+                    <p class="caracteristicasPrincipales__presentacion__parrafo" >La ciudad te espera con su energía única, pero antes de explorar, llegás a un lugar donde podés soltar las valijas, relajarte y sentirte bien.</p>
+                </div>
+                <div class="car__container">
+                    <article class="card">
+                        <div class="card__arriba">
+                            <h3>En el corazón de todo.</h3>
+                            <img src="https://placehold.co/65x65" alt="">
+                        </div>
+                        <div class="card__abajo">
+                            <p>Desde aquí estás a solo pasos de todo lo que querés explorar: los mejores restaurantes, parques y lugares emblemáticos. Todo empieza justo afuera de tu puerta.</p>
+                            <div class="card__abajo__btn">
+                                <a href="" target="autoBlank">
+                                    Descubrí qué hay cerca 
+                                </a>
+                                <img src="./assets/ico/arrowRight.svg" alt=" flecha para la derecha">
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__arriba">
+                            <h3>Comodidad que se siente.</h3>
+                            <img src="https://placehold.co/65x65" alt="">
+                        </div>
+                        <div class="card__abajo">
+                            <p>Después de un día lleno de actividades, volvés a un espacio diseñado para tu descanso. Relajate en una cama cómoda, preparate algo rico en la cocina equipada y sentite como en casa.</p>
+                            <div class="card__abajo__btn">
+                                <a href="" target="autoBlank">
+                                    Mirá todo lo que incluye
+                                </a>
+                                <img src="./assets/ico/arrowRight.svg" alt=" flecha para la derecha">
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__arriba">
+                            <h3>Siempre a tu lado</h3>
+                            <img src="https://placehold.co/65x65" alt="">
+                        </div>
+                        <div class="card__abajo">
+                            <p>La ciudad te espera, pero nunca estás solo. Estamos atentos a cada detalle para que tu estadía sea perfecta, y siempre disponibles para ayudarte con lo que necesites.</p>
+                            <div class="card__abajo__btn">
+                                <a href="" target="autoBlank">
+                                    Conocé cómo te acompañamos
+                                </a>
+                                <img src="./assets/ico/arrowRight.svg" alt=" flecha para la derecha">
+                            </div>
+                        </div>
+                    </article>
+                   
+                </div>
+                
             </section>
             <section class="testimonios">
-                <h2>Lorem ipsum dolor sit amet consect.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur Eu sed ultrices volutpat magna arcu lorem lorem lorem varius lorem magna.</p>
-                <article class="testimonio">
-                    <p class="testimonioTexto">Lorem ipsum dolor sit amet consectetur Eu sed ultrices volutpat magna arcu lorem lorem lorem varius lorem magna. Lorem ipsum dolor sit amet consectetur Eu sed ultrices volutpat </p>
-                    <div class="testimonioDatos">
-                        <p class="testimonioAutor">Nombre Apellido</p>
-                        <p class="testimoniosPlataforma">Booking</p>
-                    </div>
-                </article>
-                <article class="testimonio">
-                    <p class="testimonioTexto">Lorem ipsum dolor sit amet consectetur Eu sed ultrices volutpat magna arcu lorem lorem lorem varius lorem magna. Lorem ipsum dolor sit amet consectetur Eu sed ultrices volutpat </p>
-                    <div class="testimonioDatos">
-                        <p class="testimonioAutor">Nombre Apellido</p>
-                        <p class="testimoniosPlataforma">Booking</p>
-                    </div>
-                </article>
-                <article class="testimonio">
-                    <p class="testimonioTexto">Lorem ipsum dolor sit amet consectetur Eu sed ultrices volutpat magna arcu lorem lorem lorem varius lorem magna. Lorem ipsum dolor sit amet consectetur Eu sed ultrices volutpat </p>
-                    <div class="testimonioDatos">
-                        <p class="testimonioAutor">Nombre Apellido</p>
-                        <p class="testimoniosPlataforma">Booking</p>
-                    </div>
-                </article>
+                <div class="testimonios__presentacion">
+                    <h2>Lorem ipsum dolor sit amet consect.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur Eu sed ultrices volutpat magna arcu lorem lorem lorem varius lorem magna.</p>
+                </div>
+                <div class="testimonios__container">
+                    <article class="testimonio">
+                        <p class="testimonio__Texto">El departamento es bellísimo, la ubicación inmejorable y el edificio súper seguro. Los anfitriones nos trataron de manera excelente. Solo tengo excelentes recomendaciones y vamos a volver</p>
+                        <div class="testimonio__datos">
+                            <p class="testimonioAutor">Andrea, <span class="testimoniosPlataforma">Booking</span>
+                            </span></p>
+                        </div>
+                    </article>
+                    <article class="testimonio">
+                        <p class="testimonio__texto">Dueños amables a la hora del check in y check out, el departamento bien equipado, limpio y lo suficientemente cerca de la calle Balcarse y Güemes, caminando llegamos a plaza 9 de Julio tambien. Volveria totalmente
+                        </p>
+                        <div class="testimonio__datos">
+                            <p class="testimonioAutor">Paula, <span class="testimoniosPlataforma">Booking</span>
+                            </span></p>
+                        </div>
+                    </article>
+                    <article class="testimonio">
+                        <p class="testimonio__texto">El depa es muy bueno y la ubicación genial, es un gran lugar para visitar Salta</p>
+                        <div class="testimonio__datos">
+                            <p class="testimonioAutor">Francisco, <span class="testimoniosPlataforma">Booking</span>
+                            </span></p>
+                        </div>
+                    </article>
+                </div>
             </section>
             <section class="galeria">
-                <h2>Lorem ipsum dolor sit amet consect.</h2>
-                <img src="https://placehold.co/600x400" alt="">
-                <img src="https://placehold.co/600x400" alt="">
-                <img src="https://placehold.co/600x400" alt="">
-                <img src="https://placehold.co/600x400" alt="">
-                <img src="https://placehold.co/600x400" alt="">
-                <img src="https://placehold.co/600x400" alt="">
-                <img src="https://placehold.co/600x400" alt="">
+                <h2 class="galeria__titulo">Un vistazo a tu próximo hogar</h2>
+                <div class="galeria__grid">
+                    <img class="foto1" src="./assets/img/img-dpto3.jpeg" alt="">
+                    <img class="foto2" src="./assets/img/img-dpto4.jpeg" alt="">
+                    <img class="foto3" src="./assets/img/img-dpto5.jpeg" alt="">
+                    <img class="foto4" src="./assets/img/img-dpto10.jpeg" alt="">
+                    <img class="foto5" src="./assets/img/img-dpto7.jpeg" alt="">
+                    <img class="foto6" src="./assets/img/img-dpto8.jpeg" alt="">
+                    <img class="foto7" src="./assets/img/img-dpto9.jpeg" alt="">
+                </div>
             </section>
             <section class="reserva">
-                <p>Lorem ipsum dolor sit ameutet Eu sed ultrices volutpat mna arcunn  j rem lorem lorem varius lorem magna.</p>
-                <a href="./pages/ContactoReservas.html">
-                    Lorem ipsum
+                <p class="reserva__parrafo">Cada momento en la ciudad comienza y termina aquí. Reservá tu lugar y empezá a disfrutar.</p>
+                <a class="reserva__btn" href="./pages/ContactoReservas.html">
+                    Reservá ahora 
                     <img src="./assets/ico/arrowRight.svg" alt="">
                 </a>
             </section>
+            <div class="linea"></div>
         </main>
         <footer>
-            <div class="linea"></div>
-            <p>La ciudad te espera, y tu espacio ya está listo. <span class="negrita600">¿Preparado para empezar la aventura?</span> </p>
-            <p>Encontranos también en:</p>
-            <img src="./assets/ico/AirbnbLogo.svg" alt="Airbnb Logo">
-            <img src="./assets/ico/bookingLogo.svg" alt="Booking Logo">
-            <img src="./assets/ico/alquileresArgLogo.svg" alt="alquileres Argentina Logo">
+            <div class="footer__contenido">
+                <p>La ciudad te espera, y tu espacio ya está listo. <span class="negrita600">¿Preparado para empezar la aventura?</span> </p>
+                
+                <div class="footer__redes">
+                    <p>Encontranos también en:</p>
+                    <div class="footer__redes__links">
+                        <img src="./assets/ico/AirbnbLogo.svg" alt="Airbnb Logo">
+                        <img src="./assets/ico/bookingLogo.svg" alt="Booking Logo">
+                        <img src="./assets/ico/alquileresArgLogo.svg" alt="alquileres Argentina Logo">
+                    </div>
+                </div>
+            </div>
             <p class="copyright">©2025 lorem. Todos los derechos reservados.</p>
         </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
