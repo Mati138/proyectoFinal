@@ -434,6 +434,14 @@ gap: 16px;
 }
 
 
+
+
+
+
+
+
+
+
 /* Página Contacto y reservas */
 .contactoReservas__contenedor{
     display: flex;
@@ -463,16 +471,19 @@ gap: 16px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 24px;
 }
 .contactoBtn{
     display: flex;
     gap: 8px;
     align-items: center;
     justify-content: center;
-    background-color: grey;
-    padding: 12px 24px;
-    color: white;
+    width: 240px;
+    padding: 10px 20px;
+    border: 1px solid #2c2c2c;
+    border-radius: 12px;
+    background-color: transparent;
+    color: #2c2c2c;
 }
 .contactoBtn img{
     width: 24px;
@@ -487,4 +498,7 @@ gap: 16px;
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+.reservas__segundaParte__btns a{
+    text-decoration: underline;
 }
