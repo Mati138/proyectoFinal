@@ -52,6 +52,9 @@ a{
 .negrita700{
     font-weight: 700;
 }
+.colorVerde{
+    color: #87723b;
+}
 
 .reserva a{
     font-weight: 600;
@@ -79,17 +82,13 @@ header{
     border: none;
     outline: none;
     box-shadow: none;
-    /* font-size: 2rem;
-    padding: 0.1rem; */
 }
   
 .navbar-toggler:focus, .cerrar:focus {
     outline: none;
     box-shadow: none;
 }
-/* .navbar-toggler:hover{
-    background-color: #000;
-} */
+
 .hamburguesa{
     color: #000;
 }
@@ -101,56 +100,51 @@ header{
     fill: #87723b;
 }
 
-
-
-
-
-
-/* Aseguramos que el offcanvas ocupe todo el ancho de la página */
 .offcanvas{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     justify-content: center;
     background-color: rgba(135, 114, 59, 0.97);
     font-family: "Playfair Display", serif;
     font-size: 2rem;
 }
 .offcanvas-end {
-    width: 100%; /* Esto hace que el offcanvas ocupe todo el ancho */
-  }
+    width: 100%; 
+}
+.offcanvas-header{
+    display: flex;
+    justify-content: flex-end;
+}
   
-  .offcanvas-body {
-
-  }
-  
-  .navbar-nav {
-    width: 100%; /* Asegura que los elementos de la lista ocupen todo el ancho */
+.navbar-nav {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 24px;
-  }
-  
+    gap: 16px;
+}
+pe-3 {
+    padding-right:0;
+}
   .navbar-nav .nav-item {
 
   }
   
-  .navbar-nav a {
+.navbar-nav a {
     color: #fdfaf6;
-    transition: color 0.3s ease; /* Transición suave para color */
-  }
+    transition: color 0.3s ease; 
+}
   
-  .navbar-nav a:hover {
+.navbar-nav a:hover {
     color: #2c2c2c;
-  }
+}
   
   /* Estiliza el botón de cerrar */
-  .cerrar{
+.cerrar{
     background-color: transparent;
     border: none;
     font-size: 30px;
     color: #000;
-  }
+}
   
 
 
@@ -210,7 +204,7 @@ footer{
 .main--home{
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 88px;
 }
 .hero{
    height: 100vh;
@@ -220,19 +214,41 @@ footer{
     background-size:cover;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:space-around;
     align-items: center;
-    padding: 24px;
-    gap: 80px;
+    padding: 84px 16px 0;
+    /* gap: 80px; */
+    position: relative;
+    z-index: 1;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(135, 114, 59, 0.4); 
+    background-color:rgba(44, 44, 44, 0.5);
+    z-index: 2;
+    
 }
 .hero__titulo{
     text-align: center;
     font-weight: 500;
+    font-size: 2rem;
+    color: #fdfaf6;
+    z-index: 3;
 }
 .hero__btn{
     display: flex;
     flex-direction: column;
     gap: 8px;
+    color: #fdfaf6;
+    z-index: 3;
+}
+.hero__btn a{
+    color: #fdfaf6;
 }
 .hero__btn img{
     height: 24px;
@@ -240,7 +256,7 @@ footer{
 .caracteristicasPrincipales{
     display: flex;
     flex-direction: column;
-    padding: 0 24px;
+    padding: 0 16px;
     gap: 16px;
 }
 .caracteristicasPrincipales__presentacion{
@@ -269,7 +285,9 @@ footer{
     flex-direction: column;
     padding: 16px;
     gap: 8px;
-    background-color: grey;
+    background-color: transparent;
+    border: 1px solid #87723b;
+    border-radius: 12px;
     width: 100%;
     max-width: 382px;
 }
@@ -279,6 +297,9 @@ footer{
  justify-content: space-between;
  gap: 8px;
 }
+.card__arriba img{
+    width: 48px;
+}
 .card__abajo{
 display: flex;
 flex-direction: column;
@@ -287,11 +308,15 @@ gap: 16px;
 .card__abajo__btn{
     display: flex;
     gap:8px;
+    color: #87723b;
+}
+.card__abajo__btn a{
+    color: #87723b;
 }
 .testimonios{
     display: flex;
     flex-direction: column;
-    padding: 24px;
+    padding: 24px 16px;
     gap: 24px;
     align-items: flex-start;
 }
@@ -303,7 +328,7 @@ gap: 16px;
 .testimonios__container{
     display: flex;
     flex-direction: column;
-    gap: 96px;
+    gap: 48px;
 }
 .testimonio{
     display: flex;
@@ -315,8 +340,17 @@ gap: 16px;
     flex-direction: column;
     gap: 8px;
 }
+.testimonioAutor{
+    color: #6d6d6d;
+}
 .testimoniosPlataforma{
     font-weight: 500;
+    color: #6d6d6d;
+}
+.comillas{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #87723b;
 }
 .galeria{
     display: flex ;
@@ -324,7 +358,7 @@ gap: 16px;
     align-items: center;
     justify-content: center;
     gap: 24px;
-    padding: 0 24px;
+    padding: 0 16px;
 }
 .galeria__grid{
     display: grid;
@@ -344,7 +378,7 @@ gap: 16px;
     "foto7 foto7"
     ;
     gap: 16px;
-    padding: 0 24px;
+    padding: 0 16px;
 }
 .foto1{
     grid-area: foto1;
@@ -385,13 +419,15 @@ gap: 16px;
    display: flex;
    flex-direction: column;
    gap: 16px; 
-   padding: 80px 24px;
+   padding: 80px 16px;
    align-items: center;
 }
 .reserva__parrafo{
     text-align: center;
 }
-
+.reserva__btn{
+    color: #87723b;
+}
 
 
 
@@ -408,6 +444,7 @@ gap: 16px;
 
 .slide img{
     height: 55vh;
+    border-radius: 12px;
 }
 
 .caracteristicasDepartamento{
@@ -489,6 +526,7 @@ gap: 16px;
     background-color: #fdfaf6 !important;  
 }
 .accordion-button:not(.collapsed) {
+    color: #6d6d6d;
     border: none !important;
     box-shadow: none !important;
 }
@@ -561,10 +599,16 @@ gap: 16px;
     justify-content: center;
     width: 240px;
     padding: 10px 20px;
-    border: 1px solid #2c2c2c;
+    border: 1px solid #87723b;
     border-radius: 12px;
     background-color: transparent;
-    color: #2c2c2c;
+    color: #87723b;
+    transition: color 0.3s ease;
+}
+.contactoBtn:hover{
+    border: 1px solid #fdfaf6; 
+    color: #fdfaf6;
+    background-color: #87723b;
 }
 .contactoBtn img{
     width: 24px;
