@@ -53,6 +53,9 @@ a{
     font-weight: 700;
 }
 
+.reserva a{
+    font-weight: 600;
+}
 
 
 
@@ -64,16 +67,91 @@ header{
     display:flex;
     position: fixed;
     width: 100%;
-   justify-content: end;
+   justify-content:end;
    z-index: 1000;
+   padding: 10px 16px;
+}
+.navbar, .container-fluid, .navbar-toggler {
+    margin: 0;
+    padding: 0;
+  }
+.navbar-toggler, .cerrar {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    /* font-size: 2rem;
+    padding: 0.1rem; */
+}
+  
+.navbar-toggler:focus, .cerrar:focus {
+    outline: none;
+    box-shadow: none;
+}
+/* .navbar-toggler:hover{
+    background-color: #000;
+} */
+.hamburguesa{
+    color: #000;
+}
+.hamburguesa path {
+    fill: #2c2c2c;
+    transition: fill 0.5s ease; 
+  }
+.hamburguesa:hover path {
+    fill: #87723b;
 }
 
-.reserva a{
-    font-weight: 600;
+
+
+
+
+
+/* Aseguramos que el offcanvas ocupe todo el ancho de la página */
+.offcanvas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: rgba(135, 114, 59, 0.97);
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
 }
+.offcanvas-end {
+    width: 100%; /* Esto hace que el offcanvas ocupe todo el ancho */
+  }
+  
+  .offcanvas-body {
 
+  }
+  
+  .navbar-nav {
+    width: 100%; /* Asegura que los elementos de la lista ocupen todo el ancho */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .navbar-nav .nav-item {
 
-
+  }
+  
+  .navbar-nav a {
+    color: #fdfaf6;
+    transition: color 0.3s ease; /* Transición suave para color */
+  }
+  
+  .navbar-nav a:hover {
+    color: #2c2c2c;
+  }
+  
+  /* Estiliza el botón de cerrar */
+  .cerrar{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #000;
+  }
+  
 
 
 
