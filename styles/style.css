@@ -23,15 +23,15 @@ body{
 h1{
     font-family: "Playfair Display", serif;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 h2{
     font-family: "Poppins", serif;
-    font-size: 1.125rem;
+    font-size: 1.7rem;
 }
 h3{   
     font-family: "Poppins", serif;
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 600;
 }
 p{
@@ -45,6 +45,9 @@ a{
     text-decoration: none;
     color: #2c2c2c;
     
+}
+.negrita500{
+    font-weight: 500;
 }
 .negrita600{
     font-weight: 600;
@@ -90,10 +93,10 @@ header{
 }
 
 .hamburguesa{
-    color: #000;
+    color: #3a2d16;
 }
 .hamburguesa path {
-    fill: #2c2c2c;
+    fill: #3a2d16;
     transition: fill 0.5s ease; 
   }
 .hamburguesa:hover path {
@@ -104,7 +107,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(135, 114, 59, 0.97);
+    background-color: rgba(135, 114, 59, 0.9);
     font-family: "Playfair Display", serif;
     font-size: 2rem;
 }
@@ -125,17 +128,18 @@ header{
 pe-3 {
     padding-right:0;
 }
-  .navbar-nav .nav-item {
 
-  }
   
 .navbar-nav a {
     color: #fdfaf6;
     transition: color 0.3s ease; 
+    padding-bottom: 4px;
 }
   
 .navbar-nav a:hover {
-    color: #2c2c2c;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #3a2d16;
+    color:  #3a2d16 ;
 }
   
   /* Estiliza el botón de cerrar */
@@ -481,17 +485,79 @@ gap: 16px;
     border-radius: 12px;
 }
 
-/* Página Explora Salta */
 
-.gastronomia .card, .historia .card{
-    background-color: bisque;
-    margin: 24px 0;
+
+
+
+
+
+
+/* Página Explora Salta */
+.exploraSalta__contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 84px 16px 0;
+}
+.exploraSalta___presentacion{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
 }
 
+.card__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 16px;
+}
+.card--exploraSalta{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: transparent;
+    border: 1px solid #87723b;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 382px;
+}
+.card--exploraSalta img{
+    border-radius: 4px ;
+}
+.card--exploraSalta--presentacion{
+    margin-top: 24px;
+}
+.card-body{
+    padding: 24px 0 0;
+}
+.lista{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start ;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 0;
+}
+.lista__elemento{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    width: 100%;
+}
+.btn-primary {
+    background-color: transparent;
+    border: none;
+    color: #6d6d6d; 
+}
 
-
-
-
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: transparent !important;
+    border: none !important;
+    color: #3a2d16 !important;
+    box-shadow: none !important;
+}
 
 
 
@@ -503,7 +569,7 @@ gap: 16px;
     display: flex;
     flex-direction: column;
     gap: 42px;
-    padding: 102px 24px 0;
+    padding: 84px 16px 0;
 }
 .preguntasFrecuentes__presentacion{
     display: flex;
@@ -521,14 +587,23 @@ gap: 16px;
 .accordion-item {
     border: none !important;
     box-shadow: none !important;
+
+}
+.accordion{
+    --bs-accordion-body-padding-x: 0;
+    --bs-accordion-btn-padding-x: 0;
 }
 .accordion-button {
+    display: flex;
+    gap: 16px;
     background-color: #fdfaf6 !important;  
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%2387723b' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
 }
 .accordion-button:not(.collapsed) {
     color: #6d6d6d;
     border: none !important;
     box-shadow: none !important;
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%2387723b' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
 }
 
 .accordion-collapse {
@@ -548,8 +623,10 @@ gap: 16px;
 }
 .reserva--preguntasFrecuentes{
     display: flex;
+    justify-content: flex-start;
+    align-items: start;
     flex-direction: column;
-    gap: 28px;
+    gap: 24px;
 }
 
 
@@ -599,14 +676,13 @@ gap: 16px;
     justify-content: center;
     width: 240px;
     padding: 10px 20px;
-    border: 1px solid #87723b;
+    border: 2px solid #87723b;
     border-radius: 12px;
     background-color: transparent;
-    color: #87723b;
+    color: #3a2d16;
     transition: color 0.3s ease;
 }
 .contactoBtn:hover{
-    border: 1px solid #fdfaf6; 
     color: #fdfaf6;
     background-color: #87723b;
 }
