@@ -112,6 +112,9 @@ footer{
     display: flex;
     gap: 16px;
 }
+.footer__redes__links img{
+    width: 40px;
+}
 .copyright{
     font-size: .8rem;
     text-align: center;

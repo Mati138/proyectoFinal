@@ -1,3 +1,10 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.5314 17.8406L12 17.6509L12.4686 17.8406C12.9281 18.0266 13.25 18.4766 13.25 19C13.25 19.6904 12.6904 20.25 12 20.25C11.3096 20.25 10.75 19.6904 10.75 19C10.75 18.4766 11.0719 18.0266 11.5314 17.8406Z" stroke="#131313" stroke-width="1.5"/>
+    <!-- Rectángulo de la persiana -->
+    <rect x="6" y="5" width="12" height="10" stroke="#131313" stroke-width="1.5"/>
+    <!-- Barra superior de la persiana -->
+    <rect x="5" y="4" width="14" height="1.5" fill="#131313"/>
+    <!-- Círculo inferior de la cuerda -->
+    <circle cx="12" cy="19" r="1.25" fill="#131313"/>
+    <!-- Línea vertical de la cuerda -->
+    <line x1="12" y1="15" x2="12" y2="17.75" stroke="#131313" stroke-width="1.5"/>
 </svg>
