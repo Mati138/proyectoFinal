@@ -387,37 +387,30 @@ gap: 16px;
 .foto1{
     grid-area: foto1;
     width: 100%;
-    height: 200px;
+    /* height: 100%; */
 }
 .foto2{
     grid-area: foto2;
     width: 100%;
-    height: 200px;
 }
 .foto3{
     grid-area: foto3;
     width: 100%;
-    height: 200px;
 }
 .foto4{
     grid-area: foto4;
     width: 100%;
-    height: 200px;
 }
 .foto5{
     grid-area: foto5;
     width: 100%;
-    height: 200px;
-}
+} 
 .foto6{
     grid-area: foto6;
     width: 100%;
-    height: 200px;
 }.foto7{
     grid-area: foto7;
     width: 100%;
-    height: 200px;
-    background-size: contain;
 }
 .reserva{
    display: flex;
@@ -433,7 +426,46 @@ gap: 16px;
     color: #87723b;
 }
 
+@media (min-width: 1024px) {
+    .galeria__grid{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    justify-items:start;
+    align-items:start;
+    /* gap: 16px; */
+    grid-template-areas:
+    "foto1 foto2"
+    "foto3 foto4"
+    "foto5 foto6"
+    "foto7 foto7"
+    ;
+    gap: 16px;
+    padding: 0 16px;
+}
 
+    .foto1{
+        height: 400px;
+    }
+    .foto2{
+        height: 400px;
+    }
+    .foto3{
+        height: 400px;
+    }
+    .foto4{
+        height: 400px;
+    }
+    .foto5{
+        height: 400px;
+    }
+    .foto6{
+        height: 400px;
+    }.foto7{
+        height: 400px;
+    }
+}
 
 
 
@@ -485,7 +517,15 @@ gap: 16px;
     border-radius: 12px;
 }
 
-
+@media (min-width: 1024px) {
+    .slide img{
+    height: 80vh;
+    }
+    .carousel{
+    width: 90% !important;
+    margin: auto;
+}
+}
 
 
 
