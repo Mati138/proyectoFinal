@@ -1,3 +1,199 @@
+@charset "UTF-8";
+/* Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+  line-height: 1.6;
+  color: #2c2c2c;
+  background-color: #fdfaf6;
+}
 
+/* Reglas generales */
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: "Poppins", serif;
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-family: "Poppins", serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+.negrita500 {
+  font-weight: 500;
+}
+
+.negrita600 {
+  font-weight: 600;
+}
+
+.negrita700 {
+  font-weight: 700;
+}
+
+.colorVerde {
+  color: #87723b;
+}
+
+.reserva a {
+  font-weight: 600;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: end;
+  z-index: 1000;
+  padding: 10px 16px;
+}
+
+.navbar, .container-fluid, .navbar-toggler {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-toggler, .cerrar {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus, .cerrar:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.hamburguesa {
+  color: #3a2d16;
+}
+
+.hamburguesa path {
+  fill: #3a2d16;
+  transition: fill 0.5s ease;
+}
+
+.hamburguesa:hover path {
+  fill: #87723b;
+}
+
+.offcanvas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(135, 114, 59, 0.9);
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+
+.offcanvas-end {
+  width: 100%;
+}
+
+.offcanvas-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+pe-3 {
+  padding-right: 0;
+}
+
+.navbar-nav a {
+  color: #fdfaf6;
+  transition: color 0.3s ease;
+  padding-bottom: 4px;
+}
+
+.navbar-nav a:hover {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #3a2d16;
+  color: #3a2d16;
+}
+
+/* Estiliza el botón de cerrar */
+.cerrar {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: #000;
+}
+
+.linea {
+  border-top: 1px #000 solid;
+  width: 80%;
+  margin: auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  padding: 24px;
+}
+
+.footer__contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__contenido p {
+  text-align: center;
+}
+
+.footer__redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__redes__links {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__redes__links img {
+  width: 40px;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  text-align: center;
+}
 
 /*# sourceMappingURL=styles.css.map */

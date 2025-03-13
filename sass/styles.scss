@@ -1,4 +1,5 @@
-*{
+@use '../sass/partials/reset';
 
-
-}
+// Componentes
+@use '../sass/components/header';
+@use '../sass/components/footer';

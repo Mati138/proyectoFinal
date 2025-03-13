@@ -1,0 +1,80 @@
+header{
+    display:flex;
+    position: fixed;
+    width: 100%;
+   justify-content:end;
+   z-index: 1000;
+   padding: 10px 16px;
+}
+.navbar, .container-fluid, .navbar-toggler {
+    margin: 0;
+    padding: 0;
+  }
+.navbar-toggler, .cerrar {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+  
+.navbar-toggler:focus, .cerrar:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.hamburguesa{
+    color: #3a2d16;
+}
+.hamburguesa path {
+    fill: #3a2d16;
+    transition: fill 0.5s ease; 
+  }
+.hamburguesa:hover path {
+    fill: #87723b;
+}
+
+.offcanvas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(135, 114, 59, 0.9);
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+}
+.offcanvas-end {
+    width: 100%; 
+}
+.offcanvas-header{
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+pe-3 {
+    padding-right:0;
+}
+
+  
+.navbar-nav a {
+    color: #fdfaf6;
+    transition: color 0.3s ease; 
+    padding-bottom: 4px;
+}
+  
+.navbar-nav a:hover {
+    padding-bottom: 4px;
+    border-bottom: 2px solid #3a2d16;
+    color:  #3a2d16 ;
+}
+  
+  /* Estiliza el botón de cerrar */
+.cerrar{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #000;
+}

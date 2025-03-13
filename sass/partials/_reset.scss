@@ -1,0 +1,59 @@
+/* Reset */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    line-height: 1.6;
+    color: #2c2c2c;
+    background-color: #fdfaf6;
+}
+
+
+
+
+
+
+
+
+/* Reglas generales */
+h1{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+h2{
+    font-family: "Poppins", serif;
+    font-size: 1.7rem;
+}
+h3{   
+    font-family: "Poppins", serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+p{
+    font-size: 1rem;
+    margin: 0;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #2c2c2c;
+    
+}
+.negrita500{
+    font-weight: 500;
+}
+.negrita600{
+    font-weight: 600;
+}
+.negrita700{
+    font-weight: 700;
+}
+.colorVerde{
+    color: #87723b;
+}
+.reserva a{
+    font-weight: 600;
+}
