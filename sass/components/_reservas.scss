@@ -1,0 +1,17 @@
+@use 'sass:map';
+@use "../utilities/mixin" as *; 
+@use '../utilities/maps' as var;
+.reserva{
+    @include flexbox(column, center, center, nowrap, 16px);
+    padding: 80px 16px;
+
+    p{
+        text-align: center;
+    }
+    a{  
+        @include flexbox($gap: 16px);
+        color: map.get(var.$colors, verde );
+        font-weight: 600;
+    }
+}
+

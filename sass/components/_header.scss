@@ -1,10 +1,13 @@
+@use '../partials/tipografia'as tipo;
+@use 'sass:map';
+@use '../utilities/maps' as var;
+@use "../utilities/mixin" as *; 
 header{
-    display:flex;
+    @include flexbox(row, $justify: end,);
     position: fixed;
     width: 100%;
-   justify-content:end;
-   z-index: 1000;
-   padding: 10px 16px;
+    z-index: 1000;
+    padding: 10px 16px;
 }
 .navbar, .container-fluid, .navbar-toggler {
     margin: 0;
@@ -14,45 +17,41 @@ header{
     border: none;
     outline: none;
     box-shadow: none;
+    cursor: pointer;
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
 }
   
-.navbar-toggler:focus, .cerrar:focus {
-    outline: none;
-    box-shadow: none;
-}
 
 .hamburguesa{
-    color: #3a2d16;
-}
-.hamburguesa path {
-    fill: #3a2d16;
-    transition: fill 0.5s ease; 
-  }
-.hamburguesa:hover path {
-    fill: #87723b;
-}
+    path {
+        fill: map.get(var.$colors, negro);
+        transition: fill 0.5s ease; 
+    }
+    &:hover path{
+        fill: map.get(var.$colors, verde);
+    }
+
+} 
 
 .offcanvas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flexbox ($direction: column, $justify: center, $align:flex-end);
     background-color: rgba(135, 114, 59, 0.9);
-    font-family: "Playfair Display", serif;
+    font-family: tipo.$fuente-titulocentral;
     font-size: 2rem;
 }
 .offcanvas-end {
     width: 100%; 
 }
 .offcanvas-header{
-    display: flex;
-    justify-content: flex-end;
+    @include flexbox ($direction: column, $justify: end);
 }
   
 .navbar-nav {
+    @include flexbox ($direction: column, $gap: 16px);
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
 }
 pe-3 {
     padding-right:0;
@@ -63,18 +62,16 @@ pe-3 {
     color: #fdfaf6;
     transition: color 0.3s ease; 
     padding-bottom: 4px;
+    &:hover{
+        padding-bottom: 4px;
+        border-bottom: 2px solid map.get(var.$colors, verdeOscuro);
+        color: map.get(var.$colors, verdeOscuro); ;
+    }
 }
   
-.navbar-nav a:hover {
-    padding-bottom: 4px;
-    border-bottom: 2px solid #3a2d16;
-    color:  #3a2d16 ;
-}
-  
-  /* Estiliza el botón de cerrar */
 .cerrar{
     background-color: transparent;
     border: none;
     font-size: 30px;
-    color: #000;
+    color: map-get(var.$colors , negro );
 }

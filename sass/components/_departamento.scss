@@ -1,0 +1,58 @@
+@use "sass:map";
+@use '../utilities/maps' as var ;
+@use "../utilities/mixin" as *; 
+
+.infoDepartamento{
+    @include flexbox(column, $gap: 24px);
+    padding: 0 16px;
+
+    .slide img{
+        height: 55vh;
+        border-radius: 12px;
+    }
+}
+.caracteristicasDepartamento{
+    padding: 0 16px;
+
+    .caracteristicasDepartamento__titulo{
+        margin-bottom: 24px;
+    }
+    .caracteristicasDepartamento__subtitulo{
+        margin-bottom: 16px;
+    }
+    .caracteristicasDepartamento__listado{
+        @include flexbox($wrap: wrap, $gap: 16px);
+        padding: 0;
+    
+        .caracteristicasDepartamento__listado__elemento{
+            @include flexbox($align: flex-start, $gap: 10px);
+        }
+    }
+}
+
+
+.ubicacionDepartamento{
+    padding: 0px 16px;
+
+    .mapa__contenedor {
+        max-width: 800px;  
+        margin: 24px auto 0;   
+        border-radius: 12px;
+
+        iframe {
+            width: 100%;
+            border-radius: 12px;
+        }
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .slide img{
+    height: 80vh;
+    }
+    .carousel{
+    width: 90% !important;
+    margin: auto;
+}
+}

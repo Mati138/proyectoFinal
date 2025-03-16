@@ -1,0 +1,64 @@
+.contactoReservas__contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 102px 24px 0;
+}
+.contactoReservas__presentacion{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.contactoReservas__reservas{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.reservas__primeraParte{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+   align-items: center;
+   text-align: center;
+}
+.reservas__primeraParte__btns{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.contactoBtn{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    padding: 10px 20px;
+    border: 2px solid #87723b;
+    border-radius: 12px;
+    background-color: transparent;
+    color: #3a2d16;
+    transition: color 0.3s ease;
+}
+.contactoBtn:hover{
+    color: #fdfaf6;
+    background-color: #87723b;
+}
+.contactoBtn img{
+    width: 24px;
+}
+.reservas__segundaParte{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+}
+.reservas__segundaParte__btns{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.reservas__segundaParte__btns a{
+    text-decoration: underline;
+}

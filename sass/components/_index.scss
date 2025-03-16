@@ -1,0 +1,161 @@
+@use "sass:map";
+@use '../utilities/maps' as var ;
+@use "../utilities/mixin" as *; 
+
+
+.hero{
+    @include flexbox( column, space-around, center,);
+    height: 100vh;
+    background-image: url(../assets/img/img-dto16.jpeg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 84px 16px 0;
+    position: relative;
+    z-index: 1;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(135, 114, 59, 0.4); 
+        background-color:rgba(44, 44, 44, 0.5);
+        z-index: 2;
+    }
+    .hero__titulo{
+        text-align: center;
+        font-weight: 500;
+        font-size: 2rem;
+        color: #fdfaf6;
+        z-index: 3;
+    }
+    .hero__btn{
+        @include flexbox( column, $gap:8px);
+        color: map.get(var.$colors , blanco );
+        z-index: 3;
+
+        a{
+            color: map.get(var.$colors , blanco );
+        }
+        img{
+            height: 24px;
+        }
+    }
+}
+
+.caracteristicasPrincipales{
+    @include flexbox( column, $gap:16px);
+    padding: 0 16px;
+
+    .caracteristicasPrincipales__presentacion{
+        @include flexbox( column,center, center, $gap:16px);
+        .caracteristicasPrincipales__presentacion__titulo{
+            text-align: center;
+            font-weight: 500;
+        }
+        .caracteristicasPrincipales__presentacion__parrafo{
+            text-align: center;
+        }
+
+    }
+    .car__container{
+        @include flexbox( row,center, center, wrap, $gap:16px);
+    }
+}
+
+.testimonios{
+    @include flexbox( column, $align: flex-start, $gap:24px);
+    padding: 0px 16px;
+
+    .testimonios__presentacion{
+        @include flexbox( column);
+    }
+    .testimonios__container{
+        @include flexbox(column, $gap: 32px);
+
+        .testimonio{
+            @include flexbox(column, $gap: 8px);
+
+            .comillas{
+                font-size: map.get(var.$font-size-mobile, s);
+                font-weight: 500;
+                color: map.get(var.$colors, verde);
+            }
+
+            .testimonio__datos{
+                @extend .testimonio;
+
+                .testimonioAutor{
+                    color: map.get(var.$colors, gris)
+                }
+                .testimoniosPlataforma{
+                    @extend .testimonioAutor;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.galeria{
+    @include flexbox(column, center, center, $gap:24px);
+    padding: 0 16px;
+
+    .galeria__grid{
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        justify-items: center;
+        align-items: center;
+        /* gap: 16px; */
+        grid-template-areas:
+        "foto1 foto1"
+        "foto2 foto2"
+        "foto3 foto3"
+        "foto4 foto4"
+        "foto5 foto5"
+        "foto6 foto6"
+        "foto7 foto7"
+        ;
+        gap: 16px;
+        padding: 0 16px;
+
+        .foto1{
+            grid-area: foto1;
+            width: 100%;
+            /* height: 100%; */
+        }
+        .foto2{
+            grid-area: foto2;
+            width: 100%;
+        }
+        .foto3{
+            grid-area: foto3;
+            width: 100%;
+        }
+        .foto4{
+            grid-area: foto4;
+            width: 100%;
+        }
+        .foto5{
+            grid-area: foto5;
+            width: 100%;
+        } 
+        .foto6{
+            grid-area: foto6;
+            width: 100%;
+        }.foto7{
+            grid-area: foto7;
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+
+

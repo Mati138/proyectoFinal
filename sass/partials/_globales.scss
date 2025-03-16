@@ -1,0 +1,41 @@
+@use "sass:map";
+@use './tipografia' as tipo ;
+@use '../utilities/maps' as var ;
+@use "../utilities/mixin" as *; 
+
+body{
+    line-height: 1.6;
+    color: map.get(var.$colors, negro );
+    background-color: map.get(var.$colors, blanco );
+}
+h1{
+    font-size: map.get(var.$font-size-mobile, l);
+    font-family: tipo.$fuente-titulocentral;
+}
+h2{
+    font-family: tipo.$fuente-secundaria;
+    font-size: map.get(var.$font-size-mobile, m);
+}
+h3{   
+    font-family: tipo.$fuente-secundaria;
+    font-size: map.get(var.$font-size-mobile, s);
+}
+p{
+    font-family: tipo.$fuente-secundaria;
+    font-size: map.get(var.$font-size-mobile, xs);
+}
+main{
+    @include flexbox(column, $gap:88px);
+}
+.negrita500{
+    font-weight: 500;
+}
+.negrita600{
+    font-weight: 600;
+}
+.negrita700{
+    font-weight: 700;
+}
+.colorVerde{
+    color: map.get(var.$colors, verde);
+}

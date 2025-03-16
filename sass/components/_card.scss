@@ -1,0 +1,35 @@
+@use "sass:map";
+@use '../utilities/maps' as var ;
+@use "../utilities/mixin" as *; 
+
+// Cards de la página de inicio
+.card{
+    @include flexbox (column, $gap:8px);
+    padding: 16px;
+    background-color: transparent;
+    border: 1px solid map.get(var.$colors, verde);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 382px;
+}
+.card__arriba{
+    @include flexbox ($justify:space-between, $align:center, $gap:8px);
+
+    img{
+        width: 48px;
+    }
+}
+.card__abajo{
+    @include flexbox (column, $gap:16px);
+
+    .card__abajo__btn{
+        @include flexbox ($gap:8px);
+        color: map.get(var.$colors, verde);
+    
+        a{
+            color: map.get(var.$colors, verde);
+        }
+    }
+
+}
+

@@ -1,5 +1,15 @@
 @use '../sass/partials/reset';
+@use '../sass/partials/tipografia';
+@use '../sass/partials/globales';
 
 // Componentes
 @use '../sass/components/header';
 @use '../sass/components/footer';
+@use '../sass/components/index';
+@use '../sass/components/departamento';
+@use '../sass/components/exploraSalta';
+@use '../sass/components/preguntasFrecuentes';
+@use '../sass/components/contacto';
+
+@use '../sass/components/reservas';
+@use '../sass/components/card';
