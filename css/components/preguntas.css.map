@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"preguntas.css"}
+{"version":3,"sourceRoot":"","sources":["../../sass/components/preguntas.scss"],"names":[],"mappings":"AAIA;AAAA;EAEI;EACA;;;AAGJ;EACI;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;;;AAEJ;EACI;EACA;EACA;;;AAEJ;EACI;EACA;EACA","file":"preguntas.css"}

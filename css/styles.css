@@ -44,6 +44,8 @@ h3 {
 p {
   font-family: "Poppins", serif;
   font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 main {
@@ -399,7 +401,7 @@ footer .copyright {
   align-items: stretch;
   flex-wrap: nowrap;
   gap: 24px;
-  padding: 0 16px;
+  padding: 84px 16px 0;
 }
 .infoDepartamento .slide img {
   height: 55vh;
@@ -455,191 +457,101 @@ footer .copyright {
     margin: auto;
   }
 }
-.exploraSalta__contenedor {
+.exploraSalta___presentacion, .exploraSalta___queHacer {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 16px;
   padding: 84px 16px 0;
 }
 
-.exploraSalta___presentacion {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.exploraSalta___queHacer {
+  padding: 0 16px;
 }
 
 .card__contenedor {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: 24px;
-  margin-top: 16px;
-}
-
-.card--exploraSalta {
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-  background-color: transparent;
-  border: 1px solid #87723b;
-  border-radius: 12px;
-  width: 100%;
-  max-width: 382px;
-}
-
-.card--exploraSalta img {
-  border-radius: 4px;
-}
-
-.card--exploraSalta--presentacion {
-  margin-top: 24px;
-}
-
-.card-body {
-  padding: 24px 0 0;
-}
-
-.lista {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 16px;
-  padding: 0;
-}
-
-.lista__elemento {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 16px;
-  width: 100%;
-}
-
-.btn-primary {
-  background-color: transparent;
-  border: none;
-  color: #6d6d6d;
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: transparent !important;
-  border: none !important;
-  color: #3a2d16 !important;
-  box-shadow: none !important;
-}
-
-.preguntasFrecuentes__contenedor {
-  display: flex;
-  flex-direction: column;
-  gap: 42px;
-  padding: 84px 16px 0;
 }
 
 .preguntasFrecuentes__presentacion {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
   gap: 16px;
-}
-
-.preguntasFrecuentes__presentacion h1 {
-  font-weight: 600;
+  padding: 84px 16px 0;
 }
 
 .preguntasFrecuentes__frase {
+  color: #87723b;
   text-align: center;
-}
-
-.accordion,
-.accordion-item {
-  border: none !important;
-  box-shadow: none !important;
-}
-
-.accordion {
-  --bs-accordion-body-padding-x: 0;
-  --bs-accordion-btn-padding-x: 0;
-}
-
-.accordion-button {
-  display: flex;
-  gap: 16px;
-  background-color: #fdfaf6 !important;
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%2387723b' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
-}
-
-.accordion-button:not(.collapsed) {
-  color: #6d6d6d;
-  border: none !important;
-  box-shadow: none !important;
-  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%2387723b' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
-}
-
-.accordion-collapse {
-  border: none !important;
-  box-shadow: none !important;
-  background-color: #fdfaf6 !important;
-}
-
-.accordion-button:focus {
-  box-shadow: none !important;
-  border: none !important;
-  outline: none !important;
-}
-
-.preguntasFrecuentes__preguntas {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
 }
 
 .reserva--preguntasFrecuentes {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
-  align-items: start;
-  flex-direction: column;
-  gap: 24px;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 8px;
+  padding: 0 16px;
 }
-
-.contactoReservas__contenedor {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-  padding: 102px 24px 0;
+.reserva--preguntasFrecuentes a {
+  color: #87723b;
+  text-decoration: underline;
 }
 
 .contactoReservas__presentacion {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
   gap: 24px;
+  padding: 84px 16px 0;
 }
 
 .contactoReservas__reservas {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
   gap: 48px;
+  padding: 0 16px;
 }
-
-.reservas__primeraParte {
+.contactoReservas__reservas .reservas__primeraParte {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
+  gap: 24px;
   text-align: center;
 }
-
-.reservas__primeraParte__btns {
+.contactoReservas__reservas .reservas__primeraParte .reservas__primeraParte__btns {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 24px;
 }
-
-.contactoBtn {
+.contactoReservas__reservas .reservas__primeraParte .reservas__primeraParte__btns .contactoBtn {
   display: flex;
-  gap: 8px;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 8px;
   width: 240px;
   padding: 10px 20px;
   border: 2px solid #87723b;
@@ -648,31 +560,36 @@ footer .copyright {
   color: #3a2d16;
   transition: color 0.3s ease;
 }
-
-.contactoBtn:hover {
+.contactoReservas__reservas .reservas__primeraParte .reservas__primeraParte__btns .contactoBtn:hover {
   color: #fdfaf6;
   background-color: #87723b;
 }
-
-.contactoBtn img {
+.contactoReservas__reservas .reservas__primeraParte .reservas__primeraParte__btns img {
   width: 24px;
 }
-
-.reservas__segundaParte {
+.contactoReservas__reservas .reservas__segundaParte {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
   gap: 24px;
   text-align: center;
 }
-
-.reservas__segundaParte__btns {
+.contactoReservas__reservas .reservas__segundaParte .reservas__segundaParte__btns {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
   gap: 8px;
 }
-
-.reservas__segundaParte__btns a {
+.contactoReservas__reservas .reservas__segundaParte .reservas__segundaParte__btns a {
   text-decoration: underline;
+  color: #87723b;
+}
+.contactoReservas__reservas .reservas__segundaParte .reservas__segundaParte__btns a:hover {
+  color: #3a2d16;
 }
 
 .reserva {
@@ -698,7 +615,7 @@ footer .copyright {
   font-weight: 600;
 }
 
-.card {
+.card, .card--exploraSalta {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -744,6 +661,83 @@ footer .copyright {
 }
 .card__abajo .card__abajo__btn a {
   color: #87723b;
+}
+
+.card--exploraSalta img {
+  border-radius: 4px;
+}
+.card--exploraSalta .card--exploraSalta--presentacion {
+  margin-top: 24px;
+}
+.card--exploraSalta .card-body {
+  padding: 24px 0 0;
+}
+.card--exploraSalta .card-body .lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 16px;
+  padding: 0;
+}
+.card--exploraSalta .card-body .lista .lista__elemento {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 8px;
+  width: 100%;
+}
+.card--exploraSalta .btn-primary {
+  background-color: transparent;
+  border: none;
+  color: #6d6d6d;
+}
+.card--exploraSalta .btn-primary:hover, .card--exploraSalta .btn-primary:focus, .card--exploraSalta .btn-primary:active {
+  background-color: transparent !important;
+  border: none !important;
+  color: #3a2d16 !important;
+  box-shadow: none !important;
+}
+
+.accordion {
+  border: none !important;
+  box-shadow: none !important;
+  --bs-accordion-body-padding-x: 0;
+  --bs-accordion-btn-padding-x: 0;
+  padding: 0 16px;
+}
+.accordion .accordion-item {
+  border: none !important;
+  box-shadow: none !important;
+}
+.accordion .accordion-item .accordion-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 16px;
+  background-color: #fdfaf6 !important;
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%2387723b' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+}
+.accordion .accordion-item .accordion-button:not(.collapsed) {
+  color: #6d6d6d;
+  border: none !important;
+  box-shadow: none !important;
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%2387723b' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+}
+.accordion .accordion-item .accordion-button:focus {
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+.accordion .accordion-item .accordion-collapse {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: #fdfaf6;
 }
 
 /*# sourceMappingURL=styles.css.map */
