@@ -9,6 +9,9 @@
     --bs-accordion-body-padding-x: 0;
     --bs-accordion-btn-padding-x: 0;
     padding: 0 16px;
+    @include responsive(desktop) {
+        padding: 0px 96px;
+    }
   
     .accordion-item {
       border: none !important;

@@ -6,6 +6,9 @@
 .preguntasFrecuentes__presentacion{
     @include flexbox(column, $gap: 16px);
     padding: 84px 16px 0;
+    @include responsive(desktop) {
+        padding: 84px 96px 0;
+    }
 }
 .preguntasFrecuentes__frase{
     color: map.get(var.$colors, verde);
@@ -14,6 +17,9 @@
 .reserva--preguntasFrecuentes{
     @include flexbox(column, flex-start, flex-start, $gap:8px);
     padding: 0 16px;
+    @include responsive(desktop) {
+        padding: 0px 96px;
+    }
 
     a{
         color: map.get(var.$colors, verde);

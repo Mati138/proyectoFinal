@@ -4,6 +4,9 @@
 .reserva{
     @include flexbox(column, center, center, nowrap, 16px);
     padding: 80px 16px;
+    @include responsive(desktop) {
+        padding: 80px 96px;
+    }
 
     p{
         text-align: center;

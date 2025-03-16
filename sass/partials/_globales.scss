@@ -11,20 +11,32 @@ body{
 h1{
     font-size: map.get(var.$font-size-mobile, l);
     font-family: tipo.$fuente-titulocentral;
+    @include responsive(desktop) {
+        font-size: map.get(var.$font-size-desktop, l);
+    }
 }
 h2{
     font-family: tipo.$fuente-secundaria;
     font-size: map.get(var.$font-size-mobile, m);
+    @include responsive(desktop) {
+        font-size: map.get(var.$font-size-desktop, m);
+    }
 }
 h3{   
     font-family: tipo.$fuente-secundaria;
     font-size: map.get(var.$font-size-mobile, s);
+    @include responsive(desktop) {
+        font-size: map.get(var.$font-size-desktop, s);
+    }
 }
 p{
     font-family: tipo.$fuente-secundaria;
     font-size: map.get(var.$font-size-mobile, xs);
     margin-top: 0;
     margin-bottom: 0;
+    @include responsive(desktop) {
+        font-size: map.get(var.$font-size-desktop, xs);
+    }
 }
 main{
     @include flexbox(column, $gap:88px);

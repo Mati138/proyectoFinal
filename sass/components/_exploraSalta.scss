@@ -6,11 +6,17 @@
 .exploraSalta___presentacion{
     @include flexbox (column, $gap:16px);
     padding: 84px 16px 0;
+    @include responsive(desktop) {
+        padding: 84px 96px 0;
+    }
 
 }
 .exploraSalta___queHacer{
     @extend .exploraSalta___presentacion;
     padding: 0 16px;
+    @include responsive(desktop) {
+        padding: 0px 96px;
+    }
 }
 
 .card__contenedor{

@@ -18,5 +18,10 @@ $font-size-desktop:(
     xs: 18px,
     s: 24px,
     m: 32px,
-    l: 40px,
-)
+    l: 60px,
+);
+$breakpoints: (
+  mobile: 480px,
+  tablet: 768px,
+  desktop: 1024px
+);

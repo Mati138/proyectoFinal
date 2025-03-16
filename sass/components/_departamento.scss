@@ -5,20 +5,35 @@
 .infoDepartamento{
     @include flexbox(column, $gap: 24px);
     padding: 84px 16px 0;
-
+    @include responsive(desktop) {
+        padding: 84px 96px 0;
+    }
     .slide img{
         height: 55vh;
         border-radius: 12px;
+        @include responsive(desktop){
+            height: 80vh;
+        }
     }
 }
 .caracteristicasDepartamento{
     padding: 0 16px;
+    @include responsive(desktop) {
+        padding: 0px 96px;
+    }
 
     .caracteristicasDepartamento__titulo{
         margin-bottom: 24px;
+        @include responsive(desktop) {
+            margin-bottom: 40px;
+        }
     }
     .caracteristicasDepartamento__subtitulo{
         margin-bottom: 16px;
+        @include responsive(desktop) {
+            margin-bottom: 16px;
+            margin-top: 32px;
+        }
     }
     .caracteristicasDepartamento__listado{
         @include flexbox($wrap: wrap, $gap: 16px);
@@ -33,26 +48,20 @@
 
 .ubicacionDepartamento{
     padding: 0px 16px;
+    @include responsive(desktop) {
+        padding: 0px 96px;
+    }
 
     .mapa__contenedor {
-        max-width: 800px;  
+        max-width: 1300px;  
         margin: 24px auto 0;   
         border-radius: 12px;
-
+        @include responsive(desktop) {
+            margin: 48px auto 0;
+        }
         iframe {
             width: 100%;
             border-radius: 12px;
         }
     }
-}
-
-
-@media (min-width: 1024px) {
-    .slide img{
-    height: 80vh;
-    }
-    .carousel{
-    width: 90% !important;
-    margin: auto;
-}
 }

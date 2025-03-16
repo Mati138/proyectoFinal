@@ -5,10 +5,16 @@
 .contactoReservas__presentacion{
     @include flexbox(column, $gap:24px);
     padding: 84px 16px 0;
+    @include responsive(desktop) {
+        padding: 84px 96px 0;
+    }
 }
 .contactoReservas__reservas{
     @include flexbox(column, $gap:48px);
     padding: 0 16px;
+    @include responsive(desktop) {
+        padding: 0px 96px;
+    }
 
     .reservas__primeraParte{
         @include flexbox(column, center, center, $gap:24px);
