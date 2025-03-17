@@ -73,5 +73,5 @@ pe-3 {
     background-color: transparent;
     border: none;
     font-size: 30px;
-    color: map-get(var.$colors , negro );
+    color: map.get(var.$colors , negro );
 }
