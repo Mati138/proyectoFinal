@@ -3,9 +3,9 @@
 @use '../utilities/maps' as var;
 @use "../utilities/mixin" as *; 
 .linea{
-    border-top: 1px #000 solid;
     width: 80%;
     margin: auto;
+    padding-bottom: 24px;
 }
 footer{
     @include flexbox(column, center, center,$gap:56px);

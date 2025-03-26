@@ -20,5 +20,5 @@
 }
 
 .card__contenedor{
-    @include flexbox ($wrap: wrap, $gap:24px);
+    @include flexbox ($wrap: wrap, $gap:24px, $justify: center,);
 }

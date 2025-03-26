@@ -57,18 +57,18 @@
             }
         }
     }
-    .btn-primary {
+    .btn-vermas {
         background-color: transparent;
         border: none;
-        color: #6d6d6d;
+        color: map.get(var.$colors, verde);
       
         &:hover, 
         &:focus, 
         &:active {
-          background-color: transparent !important;
-          border: none !important;
-          color: #3a2d16 !important;
-          box-shadow: none !important;
+          background-color: transparent;
+          border: none;
+          color: map.get(var.$colors, verdeOscuro);
+          box-shadow: none;
         }
       }
 

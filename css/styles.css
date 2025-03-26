@@ -188,9 +188,9 @@ pe-3 {
 }
 
 .linea {
-  border-top: 1px #000 solid;
   width: 80%;
   margin: auto;
+  padding-bottom: 24px;
 }
 
 footer {
@@ -582,7 +582,7 @@ footer .copyright {
 .card__contenedor {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: stretch;
   flex-wrap: wrap;
   gap: 24px;
@@ -823,58 +823,59 @@ footer .copyright {
   gap: 8px;
   width: 100%;
 }
-.card--exploraSalta .btn-primary {
+.card--exploraSalta .btn-vermas {
   background-color: transparent;
   border: none;
-  color: #6d6d6d;
+  color: #87723b;
 }
-.card--exploraSalta .btn-primary:hover, .card--exploraSalta .btn-primary:focus, .card--exploraSalta .btn-primary:active {
-  background-color: transparent !important;
-  border: none !important;
-  color: #3a2d16 !important;
-  box-shadow: none !important;
+.card--exploraSalta .btn-vermas:hover, .card--exploraSalta .btn-vermas:focus, .card--exploraSalta .btn-vermas:active {
+  background-color: transparent;
+  border: none;
+  color: #3a2d16;
+  box-shadow: none;
 }
 
-.accordion {
-  border: none !important;
-  box-shadow: none !important;
+.contenedorPreguntas {
+  border: none;
+  box-shadow: none;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
   --bs-accordion-body-padding-x: 0;
   --bs-accordion-btn-padding-x: 0;
   padding: 0 16px;
 }
-@media (min-width: 1024px) {
-  .accordion {
-    padding: 0px 96px;
-  }
+.contenedorPreguntas .pregunta {
+  border: none;
+  box-shadow: none;
+  padding-bottom: 40px;
+  background-color: #fdfaf6;
 }
-.accordion .accordion-item {
-  border: none !important;
-  box-shadow: none !important;
-}
-.accordion .accordion-item .accordion-button {
+.contenedorPreguntas .pregunta .pregunta-btn {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
   flex-wrap: nowrap;
-  gap: 16px;
-  background-color: #fdfaf6 !important;
+  gap: 8px;
+  padding: 0;
+  background-color: #fdfaf6;
   --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%2387723b' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
 }
-.accordion .accordion-item .accordion-button:not(.collapsed) {
-  color: #6d6d6d;
-  border: none !important;
-  box-shadow: none !important;
+.contenedorPreguntas .pregunta .pregunta-btn:not(.collapsed) {
+  color: #87723b;
+  border: none;
+  box-shadow: none;
   --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%2387723b' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
 }
-.accordion .accordion-item .accordion-button:focus {
-  box-shadow: none !important;
-  border: none !important;
-  outline: none !important;
+.contenedorPreguntas .pregunta .pregunta-btn:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
 }
-.accordion .accordion-item .accordion-collapse {
-  border: none !important;
-  box-shadow: none !important;
+.contenedorPreguntas .pregunta .pregunta-collapse {
+  border: none;
+  box-shadow: none;
   background-color: #fdfaf6;
 }
 
