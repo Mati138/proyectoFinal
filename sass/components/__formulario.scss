@@ -53,7 +53,7 @@ form{
         border-radius: 12px;
         border: 2px solid map.get(var.$colors, verde);
         background-color: transparent;
-        color: map.get(var.$colors, negro);
+        color: map.get(var.$colors, verde);
         transition: color 0.3s ease;
         width: 100%;
         font-family: tipo.$fuente-secundaria;
