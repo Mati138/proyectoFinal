@@ -1,6 +1,7 @@
 @use "sass:map";
 @use '../utilities/maps' as var ;
 @use "../utilities/mixin" as *; 
+@use "../partials/tipografia" as tipo;
 
 .contactoReservas__presentacion{
     @include flexbox(column, $gap:24px);
@@ -49,11 +50,15 @@
         .reservas__segundaParte__btns{
             @include flexbox(column, $gap:8px);
 
-            a{
+            a{  
+                font-family: tipo.$fuente-secundaria;
                 text-decoration: underline;
                 color: map.get(var.$colors, verde);
                 &:hover{
                     color: map.get(var.$colors, verdeOscuro);
+                }
+                @include responsive(desktop) {
+                    font-size: map.get(var.$font-size-desktop, xs);
                 }
             }
 

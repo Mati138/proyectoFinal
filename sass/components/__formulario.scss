@@ -65,4 +65,8 @@ form{
             width: 180px;
         }
     }
+    p{
+        font-size: map.get(var.$font-size-mobile, xxs);
+        color: map.get(var.$colors, gris);
+    }
 }

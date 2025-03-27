@@ -1,6 +1,7 @@
 @use "sass:map";
 @use '../utilities/maps' as var ;
 @use "../utilities/mixin" as *; 
+@use "../partials/tipografia" as tipo;
 
 
 .preguntasFrecuentes__presentacion{
@@ -24,6 +25,10 @@
     a{
         color: map.get(var.$colors, verde);
         text-decoration: underline;
+        font-family: tipo.$fuente-secundaria;
+        @include responsive(desktop) {
+            font-size: map.get(var.$font-size-desktop, xs);
+        }
     }
 
 }

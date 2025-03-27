@@ -242,7 +242,7 @@ footer .copyright {
   flex-wrap: nowrap;
   gap: 100px;
   height: 100vh;
-  background-image: url(../assets/img/img-dto16.jpeg);
+  background-image: url(../assets/img/departamento-perfecta-ubicacion-salta-capital.webp);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -397,7 +397,7 @@ footer .copyright {
   grid-template-rows: repeat(5, 1fr);
   justify-items: center;
   align-items: center;
-  grid-template-areas: "foto1 foto1" "foto2 foto2" "foto3 foto3" "foto4 foto4" "foto5 foto5" "foto6 foto6" "foto7 foto7";
+  grid-template-areas: "foto1 foto1" "foto2 foto2" "foto3 foto3" "foto4 foto4" "foto5 foto5" "foto6 foto6";
   gap: 16px;
   padding: 0 16px;
 }
@@ -426,19 +426,15 @@ footer .copyright {
   grid-area: foto6;
   width: 100%;
 }
-.galeria .galeria__grid .foto7 {
-  grid-area: foto7;
-  width: 100%;
-}
 @media (min-width: 1024px) {
   .galeria .galeria__grid {
     display: grid;
     width: 100vw;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     justify-items: start;
     align-items: start;
-    grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6" "foto7 foto7";
+    grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6";
     gap: 16px;
     padding: 0 96px;
   }
@@ -458,9 +454,6 @@ footer .copyright {
     height: 400px;
   }
   .galeria .galeria__grid .foto6 {
-    height: 400px;
-  }
-  .galeria .galeria__grid .foto7 {
     height: 400px;
   }
 }
@@ -625,6 +618,12 @@ footer .copyright {
 .reserva--preguntasFrecuentes a {
   color: #87723b;
   text-decoration: underline;
+  font-family: "Poppins", serif;
+}
+@media (min-width: 1024px) {
+  .reserva--preguntasFrecuentes a {
+    font-size: 18px;
+  }
 }
 
 .contactoReservas__presentacion {
@@ -713,11 +712,17 @@ footer .copyright {
   gap: 8px;
 }
 .contactoReservas__reservas .reservas__segundaParte .reservas__segundaParte__btns a {
+  font-family: "Poppins", serif;
   text-decoration: underline;
   color: #87723b;
 }
 .contactoReservas__reservas .reservas__segundaParte .reservas__segundaParte__btns a:hover {
   color: #3a2d16;
+}
+@media (min-width: 1024px) {
+  .contactoReservas__reservas .reservas__segundaParte .reservas__segundaParte__btns a {
+    font-size: 18px;
+  }
 }
 
 .reserva {
@@ -954,6 +959,10 @@ form .form__submit:hover {
   form .form__submit {
     width: 180px;
   }
+}
+form p {
+  font-size: 14px;
+  color: #6d6d6d;
 }
 
 /*# sourceMappingURL=styles.css.map */
