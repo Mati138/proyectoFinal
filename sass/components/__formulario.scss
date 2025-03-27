@@ -26,12 +26,16 @@ form{
             @include responsive(desktop){
                 width: 320px;
             }
+            &::placeholder {
+                color: map.get(var.$colors, verdeOscuro);
+            }
         }
     }
 
     .form__textarea{
         width: 100%;
         height: 180px;
+        resize: none;
         outline: none;
         border: 2px solid map.get(var.$colors, verde);
         background-color: map.get(var.$colors, blanco );
@@ -39,6 +43,9 @@ form{
         padding: 10px 20px;
         font-family: tipo.$fuente-secundaria;
         border-radius: 12px;
+        &::placeholder {
+            color: map.get(var.$colors, verdeOscuro);
+        }
 
     }
     .form__submit{
@@ -49,6 +56,7 @@ form{
         color: map.get(var.$colors, negro);
         transition: color 0.3s ease;
         width: 100%;
+        font-family: tipo.$fuente-secundaria;
         &:hover{
             background-color: map.get(var.$colors, verde);
             color: map.get(var.$colors, blanco);
