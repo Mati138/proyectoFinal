@@ -9,7 +9,6 @@
         padding: 84px 96px 0;
     }
     .slide img{
-        height: 55vh;
         border-radius: 12px;
         @include responsive(desktop){
             height: 80vh;
