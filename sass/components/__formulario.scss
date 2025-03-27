@@ -1,0 +1,59 @@
+@use "sass:map";
+@use '../utilities/maps' as var ;
+@use "../utilities/mixin" as *; 
+@use "../partials/tipografia" as tipo;
+
+form{
+    @include flexbox(column, center, center, nowrap, 24px );
+    @include responsive(desktop){
+        align-items: flex-start;
+    }
+
+    .form__primeralinea{
+        @include flexbox(row, center, center, wrap, 24px);
+        max-width: 1200px;
+        margin-top: 32px;
+        
+        .primeralinea__input{
+            border: none;
+            border-bottom: 2px solid map.get(var.$colors, verde);
+            background-color: map.get(var.$colors, blanco );
+            color: map.get(var.$colors, negro);
+            padding: 10px 20px;
+            width: 100%;
+            font-family: tipo.$fuente-secundaria;
+            outline: none;
+            @include responsive(desktop){
+                width: 320px;
+            }
+        }
+    }
+
+    .form__textarea{
+        width: 100%;
+        outline: none;
+        border: 2px solid map.get(var.$colors, verde);
+        background-color: map.get(var.$colors, blanco );
+        color: map.get(var.$colors, negro);
+        padding: 10px 20px;
+        font-family: tipo.$fuente-secundaria;
+        border-radius: 12px;
+
+    }
+    .form__submit{
+        padding: 10px 20px;
+        border-radius: 12px;
+        border: 2px solid map.get(var.$colors, verde);
+        background-color: transparent;
+        color: map.get(var.$colors, negro);
+        transition: color 0.3s ease;
+        width: 100%;
+        &:hover{
+            background-color: map.get(var.$colors, verde);
+            color: map.get(var.$colors, blanco);
+        }
+        @include responsive(desktop){
+            width: 180px;
+        }
+    }
+}

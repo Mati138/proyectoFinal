@@ -59,8 +59,9 @@
     }
     .btn-vermas {
         background-color: transparent;
+        padding:  16px 0;
         border: none;
-        color: map.get(var.$colors, verde);
+        color: map.get(var.$colors, verdeOscuro);
       
         &:hover, 
         &:focus, 

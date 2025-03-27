@@ -825,8 +825,9 @@ footer .copyright {
 }
 .card--exploraSalta .btn-vermas {
   background-color: transparent;
+  padding: 16px 0;
   border: none;
-  color: #87723b;
+  color: #3a2d16;
 }
 .card--exploraSalta .btn-vermas:hover, .card--exploraSalta .btn-vermas:focus, .card--exploraSalta .btn-vermas:active {
   background-color: transparent;
@@ -877,6 +878,73 @@ footer .copyright {
   border: none;
   box-shadow: none;
   background-color: #fdfaf6;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 24px;
+}
+@media (min-width: 1024px) {
+  form {
+    align-items: flex-start;
+  }
+}
+form .form__primeralinea {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1200px;
+  margin-top: 32px;
+}
+form .form__primeralinea .primeralinea__input {
+  border: none;
+  border-bottom: 2px solid #87723b;
+  background-color: #fdfaf6;
+  color: #2c2c2c;
+  padding: 10px 20px;
+  width: 100%;
+  font-family: "Poppins", serif;
+  outline: none;
+}
+@media (min-width: 1024px) {
+  form .form__primeralinea .primeralinea__input {
+    width: 320px;
+  }
+}
+form .form__textarea {
+  width: 100%;
+  outline: none;
+  border: 2px solid #87723b;
+  background-color: #fdfaf6;
+  color: #2c2c2c;
+  padding: 10px 20px;
+  font-family: "Poppins", serif;
+  border-radius: 12px;
+}
+form .form__submit {
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: 2px solid #87723b;
+  background-color: transparent;
+  color: #2c2c2c;
+  transition: color 0.3s ease;
+  width: 100%;
+}
+form .form__submit:hover {
+  background-color: #87723b;
+  color: #fdfaf6;
+}
+@media (min-width: 1024px) {
+  form .form__submit {
+    width: 180px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
